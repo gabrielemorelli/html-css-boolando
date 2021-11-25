@@ -1,0 +1,69 @@
+.container{
+width: 80%;
+margin: 50px auto;
+}
+
+.row {
+    margin: 40px 0px 0px 0px;
+  
+}
+
+.prodotto img{
+    width: 350px;
+
+    
+   
+}
+
+.prodotto{
+    position: relative;
+    display: inline-block; 
+}
+    
+  
+
+.prodotto .cuore{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: white;
+    padding: 5px;
+}
+
+.prodotto .sconto{  
+    position: absolute;
+    bottom: 120px;
+    left:0;
+}
+.btn {
+    
+    color: white;
+    background-color: red;
+    font-size: 12px;
+    font-weight:bold;
+    padding: 5px;
+}
+
+.rosso{ 
+    background-color: red;
+}
+
+.verde{
+    background-color:  #028759;
+}
+
+ul{
+    list-style: none;
+   }
+
+   .prodotto:hover .img4{
+       display: block;
+    }
+
+.img4{
+    display:none;
+    position: absolute;
+}
+
+
+
