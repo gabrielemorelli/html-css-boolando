@@ -1,28 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
 .container{
 width: 80%;
 margin: 50px auto;
 }
 
 .row {
-    margin: 40px 0px 0px 0px;
-  
+  width: 32%;
+  display: inline-block;
+  position: relative;
 }
 
-.prodotto img{
-    width: 350px;
-
+.row img{
+width: 100%;
     
-   
 }
 
-.prodotto{
-    position: relative;
-    display: inline-block; 
-}
-    
   
-
-.prodotto .cuore{
+.row .cuore{
     position: absolute;
     top: 5px;
     right: 0;
@@ -30,13 +33,12 @@ margin: 50px auto;
     padding: 5px;
 }
 
-.prodotto .sconto{  
+.row .sconto{  
     position: absolute;
     bottom: 120px;
     left:0;
 }
 .btn {
-    
     color: white;
     background-color: red;
     font-size: 12px;
@@ -49,21 +51,41 @@ margin: 50px auto;
 }
 
 .verde{
-    background-color:  #028759;
+    background-color: #028759;
 }
-
-ul{
-    list-style: none;
-   }
 
    .prodotto:hover .img4{
        display: block;
     }
 
-.img4{
-    display:none;
-    position: absolute;
+
+
+.prezzi .brand{
+font-size: 12px;
 }
 
+.prezzi .product-name{
+text-transform: uppercase;
+}
 
+.prezzi .price{
+color: red;
+}
+.prodotto .prima-immagine{
+    display: block;
+}
+.prodotto .seconda-immagine{
+    display: none;
+}
+
+.prodotto:hover{
+    cursor: pointer;
+}
+
+.prodotto:hover .prima-immagine{
+    display: none;
+}
+.prodotto:hover .seconda-immagine{
+display: block;
+}
 
